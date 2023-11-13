@@ -1,0 +1,91 @@
+@import url('../style/catalogo.css');
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* adiciona borda */
+    padding: 20px 20px 20px 0px;
+    /* adiciona espaço interno */
+    margin-bottom: 20px;
+    /* adiciona margem inferior */
+}
+
+.card:last-child {
+    border-bottom: none;
+    /* remove borda inferior da última .card */
+}
+
+#card_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-info {
+    width: 30%;
+    padding: 42px 0 42px 0;
+    /* adiciona espaço interno e remove margem inferior */
+    margin: 0 auto;
+    margin-bottom: 22px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgba(121, 178, 249, 0.087);
+}
+
+.card-info h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.card-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.card-info p a {
+    text-decoration: none;
+    color: #2670c0;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    position: relative;
+}
+
+.card-info p a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2670c0;
+    transition: width 0.3s ease-in-out;
+}
+
+.card-info p a:hover {
+    color: #004b91;
+    transition: color 0.3s ease-in-out;
+}
+
+.card-info p a:hover::after {
+    width: 100%;
+}
+
+.card-info button {
+    background-color: #08509d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 36px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card-info button:hover {
+    background-color: #0062cc;
+}
