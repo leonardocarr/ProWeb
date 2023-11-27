@@ -4,26 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../style/descricao.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-
-
-    <title>Api ProWeb</title>
+    <title>Produtos</title>
 
 <body>
     <header>
         <!--Logo Site-->
         <section id="centralizar">
             <div class="logo">
-                <a href="index.html"><img src="./img/proweb.png" alt="Logo da minha empresa"></a>
+                <a href="../index.html"><img src="../img/proweb.png" alt="Logo da minha empresa"></a>
             </div>
 
             <!-- Links do nav-bar -->
             <nav id="nav-links">
                 <ul>
-                    <li><a href="./pages/produtos.html">Produtos</a></li>
-                    <li><a href="./pages/catalogo.html">Catálogo</a></li>
-                    <li><a href="./pages/contato.html">Contato</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/catalogo.html">Catálogo</a></li>
+                    <li><a href="../pages/contato.html">Contato</a></li>
                 </ul>
             </nav>
 
@@ -36,49 +34,71 @@
 
     <tbody>
         <!-- Conteúdo do header -->
-        <main style="flex: 1;">
+        <main>
             <div id="main-banner" style="color: rgb(40, 40, 40);">
                 <!-- Título do banner -->
-                <h1 style="padding: 34px;text-align: center;font-size: 36px;">PROWEB MULTIPRODUCT</h1>
-
-                <!-- Parágrafo do banner -->
-                <p style="text-align: center; padding-top: 12px;">Conheça nosso catálogo de API e solicite um orçamento
-                </p>
-                <p style="text-align: center; padding-top: 12px;">Fale conosco e venha conhecer as nossos soluções para
-                    digitalização de processos de negócios e vendas de seguros web</p>
-
-                <!-- BTN banner -->
-                <div style="display: flex; justify-content: center;padding-top: 26px;">
-                    <button class="btn-personalizado" style="margin-right: 20px;"><a href="./pages/descricao.html">COMEÇAR</a></button>
-                    <button class="btn-transparente"><a href="./pages/produtos.html">CONFERIR API'S</a></button>
-                </div>
+                <h1 style="padding: 34px; font-size: 36px;">CONHECENDO</h1>
             </div>
         </main>
     </tbody>
 
     <!-- Body content -->
     <section id="main-section" style="color: rgb(40, 40, 40);">
+
         <div id="div-info">
-            <h1>CONCEITO PARA A <span style="color: rgb(202, 115, 15);">GESTÃO</span> DE <span
-                    style="color: rgb(202, 115, 15);">SEGUROS.</span></h1>
-        </div>
+            <h2>Sobre as nossas <span style="color: rgb(202, 115, 15);">APIS</span></h2>
 
-        <div id="info-banner"><!-- Div box -->
-            <div id="descricao-banner">
-                <h1>APIs de Conexão e Comunicação</h1>
-                <p>Conecte-se perfeitamente com suas plataformas e aplicativos existentes. Nossas APIs são projetadas
-                    para facilitar a troca de dados e informações de maneira segura.</p>
-                <button class="btn-personalizado">CLIQUE AQUI</button>
-            </div>
-
-            <!-- Div da imagem -->
-            <div id="info-img">
-                <img src="./img/benner.jpg" width="350" height="auto" alt="Description of the image"
-                    style="display: flex;">
+            <div class="api-descricao">
+                <p>We have invested in the development of a set of APIs that will allow our partners and third-party
+                    providers to connect to our systems.</p>
+                <p>Leveraging this technology, we are offering integration capabilities for functionalities such as
+                    Quote & Buy, Claims creation and management and Expert Orders across three major business lines:
+                    Motor, Health and Household.</p>
+                <p>This will allow our products to become accessible across companies and platforms, through external
+                    services and applications, banking agency branch or self-service client applications, brokers' own
+                    channels and more.</p>
             </div>
 
         </div>
+
+
+        <section>
+            <div id="div-info">
+                <h2>Estrutura</h2>
+
+                <div class="api-descricao">
+                    <div style="display: flex; justify-content: center;">
+                        <img src="../img/API-Estrutura.png" alt="Imagem estrutura" height="auto" width="700">
+                    </div>
+                </div>
+
+                <div class="container-content">
+                    <div class="guia">
+                        <h2>Guia rápido</h2>
+                        <p>Esta seção fornece informações sobre como solicitar acesso e configurar a conexão para usar
+                            as
+                            APIs.</p>
+                        <p>Siga as etapas abaixo.</p>
+                    </div>
+
+                    <div class="guia-lista">
+                        <ol>
+                            <li><span class="bg-ol">1</span>Faça login</li>
+                            <li><span class="bg-ol">2</span>Faça login</li>
+                            <li><span class="bg-ol">3</span>Faça login</li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <h2>Acesso</h2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </section>
+
 
     <!-- Footer -->
     <footer style="background-color: #031326; padding: 20px; margin-top: 60px; display: flex;">
@@ -113,7 +133,6 @@
         </div>
 
     </footer>
-
 </body>
 
 </html>

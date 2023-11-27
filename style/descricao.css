@@ -1,0 +1,45 @@
+@import url('../style/catalogo.css');
+
+ol {
+    font: 16px 'Arial', 'Helvetica', sans-serif;
+    margin-top: 24px;
+    list-style-type: none;
+}
+
+ol li {
+    margin-top: 12px;
+}
+
+p {
+    font: 16px 'Arial', 'Helvetica', sans-serif;
+    color: rgb(16, 16, 16);
+}
+
+
+.api-descricao p {
+    margin-top: 15px;
+}
+
+.api-descricao p:first-child {
+    margin-top: 42px;
+}
+
+.container-content {}
+
+.guia p {
+    margin-top: 24px;
+}
+
+.guia-lista {
+    margin-bottom: 44px;
+}
+
+.bg-ol {
+    padding: 0 5px 0 5px;
+    color: white;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: rgb(15, 15, 103);
+    border-radius: 30px;
+}
