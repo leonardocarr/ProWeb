@@ -3,7 +3,10 @@
 ol {
     font: 16px 'Arial', 'Helvetica', sans-serif;
     margin-top: 24px;
-    list-style-type: none;
+}
+
+.guia-lista ol {
+    list-style: none;
 }
 
 ol li {
@@ -24,8 +27,6 @@ p {
     margin-top: 42px;
 }
 
-.container-content {}
-
 .guia p {
     margin-top: 24px;
 }
@@ -42,4 +43,9 @@ p {
     font-size: 14px;
     background-color: rgb(15, 15, 103);
     border-radius: 30px;
+}
+
+.ol-descricao {
+    margin-left: 24px;
+    list-style-type: disc;
 }
