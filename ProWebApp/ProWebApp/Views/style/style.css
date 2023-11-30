@@ -1,0 +1,276 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: rgb(225, 223, 223);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Fontes e estilos de texto */
+h1,
+h2,
+h3 {
+    font-family: 'ubuntu', sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+p {
+    font: 16px 'Arial', 'Helvetica', sans-serif;
+}
+
+/* Estilos do corpo da página */
+body {
+    min-width: 1400px;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    /* Efeito de fade */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: grid;
+    padding: 16px;
+    background-color: #031326;
+    /* Altere a cor de fundo conforme necessário */
+}
+
+#centralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 80px;
+}
+
+/* Estilos para o logotipo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 6px;
+}
+
+#nav-links {
+    font-family: 'ubuntu', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    padding-left: 32px;
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+    /* Espaçamento entre os links - ajuste conforme necessário */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    /* Cor dos links */
+    transition: color 0.3s ease;
+    /* Adiciona suavização à mudança de cor */
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: rgb(202, 115, 15);
+    /* Cor do sublinhado */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+    margin-bottom: -2px;
+}
+
+nav a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+.login {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.login button {
+    background-color: #0073e6;
+    /* Cor de fundo do botão - altere conforme necessário */
+    color: white;
+    /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* BANNER */
+#main-banner {
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+    background-image: url(../img/benner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 36px;
+}
+
+#main-banner p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-transparente {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #efefef;
+    /* Cor do texto do botão */
+    background-color: #031326;
+    /* Fundo transparente */
+    border: 2px solid #000;
+    /* Borda do botão */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-transparente:hover {
+    color: #fff;
+    /* Cor do texto do botão ao passar o mouse */
+    background-color: #031326;
+    /* Cor de fundo do botão ao passar o mouse */
+}
+
+.btn-personalizado {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(202, 115, 15);
+    /* Cor de fundo do botão */
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-personalizado:hover {
+    background-color: rgb(165, 93, 11);
+    /* Cor de fundo do botão ao passar o mouse */
+}
+
+.btn-banner {
+    background-color: #0073e6;
+    /* Cor de fundo do botão - altere conforme necessário */
+    color: white;
+    /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* INFOS */
+#main-section {
+    width: 64%;
+    margin: 0 auto;
+}
+
+#div-info {
+    margin-bottom: 32px;
+}
+
+#info-banner {
+    display: flex;
+    justify-content: space-between;
+    /* Para centralizar a imagem à direita */
+    align-items: center;
+    border: 1px solid rgba(2, 4, 77, 0.181);
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(2, 4, 77, 0.05);
+    /* Sombra da borda */
+}
+
+#descricao-banner {
+    padding: 0 82px;
+    text-align: left;
+}
+
+#descricao-banner h1 {
+    margin-bottom: 24px;
+}
+
+#descricao-banner p {
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #031326;
+    /* Cor de fundo do rodapé */
+    color: white;
+    /* Cor do texto do rodapé */
+    padding: 16px;
+}
+
+#footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#footer-sobre,
+#footer-documentation,
+#footer-api,
+#footer-contact {
+    color: #c0c0c0;
+    width: 20%;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-container p {
+    padding-bottom: 24px;
+}
+
+#footer-sobre a,
+#footer-documentation a,
+#footer-api a,
+#footer-contact a {
+    text-decoration: none;
+    color: #c0c0c0;
+}

@@ -1,0 +1,11 @@
+@import url('../style/catalogo.css');
+
+#sobre-content {
+    text-align: justify;
+}
+
+.contact_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
