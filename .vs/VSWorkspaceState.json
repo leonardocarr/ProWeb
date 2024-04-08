@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ProWebApp",
+    "\\ProWebApp\\ProWebApp",
+    "\\ProWebApp\\ProWebApp\\Areas",
+    "\\ProWebApp\\ProWebApp\\Areas\\Identity",
+    "\\ProWebApp\\ProWebApp\\Areas\\Identity\\Pages",
+    "\\ProWebApp\\ProWebApp\\Areas\\Identity\\Pages\\Account"
+  ],
+  "SelectedNode": "\\ProWebApp\\ProWebApp\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+  "PreviewInSolutionExplorer": false
+}
